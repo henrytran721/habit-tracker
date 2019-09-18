@@ -78,15 +78,13 @@ export default class Homepage extends React.Component {
         this.addInfo = () => {
             let habitText = document.querySelector('.habitText');
             let numText = document.querySelector('.numText');
-            this.setState((currentState) => {
-                return {
-                    habitInfo: currentState.habitInfo.concat({
-                        habitName: this.state.habitValue,
-                        amount: parseInt(this.state.numValue),
-                        startingValue: 0,
-                        counter: 0
-                    })
-                }
+            this.setState({
+                habitInfo: this.state.habitInfo.concat({
+                    habitName: this.state.habitValue,
+                    amount: parseInt(this.state.numValue),
+                    startingValue: 0,
+                    counter: 0
+                })
             })
         }
 

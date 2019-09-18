@@ -40,7 +40,7 @@ const HabitBox = (props) => {
                                 <p>{habit.habitName}</p>
                                 <p>{habit.startingValue} / {habit.amount}</p>
                                 {habit.counter > 0 ? 
-                                <p className='counter'>Times completed: {habit.counter}</p> : ''
+                                <p className='counter'>Times completed: {habit.counter}</p> : <p></p>
                                 }
                             </div>
                             <div className='incrementor'>

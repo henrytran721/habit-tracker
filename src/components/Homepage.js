@@ -32,7 +32,7 @@ const AddBox = (props) => {
 const HabitBox = (props) => {
     return (
         <div className='boxContainer'>
-            {props.habit.map((habit, index) => {
+            {/* {props.habit.map((habit, index) => {
                 return (
                     <div className='habitItem'>
                         <div id={index} className='habitBox'>
@@ -55,7 +55,7 @@ const HabitBox = (props) => {
                         <button id={index} onClick={(e) => props.handleDelete(habit.habitName, e)} className='deleteBtn'>Delete</button>
                     </div>
                 )
-            })}
+            })} */}
         </div>
     )
 }

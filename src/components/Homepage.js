@@ -157,12 +157,12 @@ export default class Homepage extends React.Component {
         }
     }
     componentDidMount() {
-        let newState = localStorage.getItem('habits');
-        let data = JSON.parse(newState);
-        console.log(this.state.habitInfo);
-        this.setState({
-            habitInfo: data
-        })
+        // let newState = localStorage.getItem('habits');
+        // let data = JSON.parse(newState);
+        // console.log(this.state.habitInfo);
+        // this.setState({
+        //     habitInfo: data
+        // })
     }
 
     componentDidUpdate() {

@@ -168,6 +168,7 @@ export default class Homepage extends React.Component {
         localStorage.setItem('habits', JSON.stringify(this.state.habitInfo));
     }
     render() {
+        console.log(this.state.habitInfo);
         return (
             <div id='habitContainer'>
                 <div className='title'>

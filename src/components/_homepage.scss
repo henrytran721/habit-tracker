@@ -176,6 +176,7 @@ $montserrat: 'Montserrat', sans-serif;
             position: absolute;
             z-index: 1;
             border-radius: 10px;
+            transition: width 500ms;
         }
         .deleteBtn {
                 height: 39px;

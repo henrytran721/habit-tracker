@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+$openSans: 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+#habitContainer {
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+    .description {
+        color: #fff;
+        text-align: center;
+        font-family: $openSans;
+        font-size: 1.2em;
+        p {
+            margin: 15px;
+        }
+    }
+
+    .addFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2% 0;
+        .addHabit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 10% 0;
+
+        .addText {
+            color: #BA01FF;
+            font-family: $openSans;
+            text-align: center;
+        }
+
+        button {
+            width: 50%;
+            height: 60px;
+            font-size: 2.5em;
+            background: #BA01FF;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:focus {
+                outline: 0;
+            }
+
+            span {
+                margin-bottom: 13%;
+            }
+        }
+    }
+
+    .addBox {
+        width: 20%;
+        height: 225px;
+        background: #BA01FF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+
+        .habitInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-family: $openSans;
+                color: white;
+                text-align: center;
+            }
+
+            input {
+                width: 90%;
+                background: none;
+                border: none;
+                border-bottom: 2px solid white;
+                color: white;
+                font-size: 1.2em;
+                text-align: center;
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+
+        button {
+            background: none;
+            border: none;
+            color: white;
+            font-family: $openSans;
+            font-size: 1.2em;
+            cursor: pointer;
+            background: #5AB8FF;
+            margin: 5% 0;
+            width: 40%;
+            border-radius: 10px;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    }
+
+    .boxContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .habitItem {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        .habitBox {
+            width: 50%;
+            height: 67px;
+            background: #D8D8D8;
+            margin: 2% 3%;
+            flex: 1.8;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 0;
+            .habitDescription {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                z-index: 2;
+                p {
+                    font-family: $montserrat;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    font-size: 1em;
+                    margin: 0;
+                }
+
+                .counter {
+                    font-size: 0.8em;
+                }
+            }
+
+            .incrementor {
+                display: flex;
+                align-items: center;
+                z-index: 2;
+                button {
+                    background: none;
+                    border: none;
+                    font-size: 1.5em;
+                    font-family: $montserrat;
+                    cursor: pointer;
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            .resetBtn {
+            text-transform: uppercase;
+            font-size: 1.2em;
+            }
+            }
+        }
+
+        .psuedoBox {
+            width: 0%;
+            height: 67px;
+            background: linear-gradient(180deg, #5AB8FF, #005D87);
+            position: absolute;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        .deleteBtn {
+                height: 39px;
+                background: #5AB8FF;
+                border: none;
+                color: black;
+                width: 17%;
+                border-radius: 10px;
+                font-family: $openSans;
+                font-size: 1.2em;
+                cursor: pointer;
+                &:focus {
+                    outline: 0;
+                }
+        }
+        }
+    }
+}
+
